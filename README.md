@@ -51,6 +51,14 @@ key = "..."
 
 (3) Download the processed CodeContest validation and test dataset from [hugging face](https://huggingface.co/datasets/talrid/CodeContests_valid_and_test_AlphaCodium/blob/main/codecontests_valid_and_test_processed_alpha_codium.zip), extract the zip file, and placed the extracted folder in the root of the project.
 
+## Installation with devenv
+
+* install Nix and Devenv https://devenv.sh/getting-started/
+* enter the dev environment with `devenv shell` or `direnv allow`
+* write `{ env.OPENAI_API_KEY = "you open ai secret key"; }` to `devenv.local.nix`
+* run example problem solution with `solve-example-problem`
+
+
 ## How to run
 
 ### Configuration

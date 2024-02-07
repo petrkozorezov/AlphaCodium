@@ -1,10 +1,10 @@
 [config]
-model="gpt-4-0613"
+model="gpt-4-0125-preview"
 #model = "gpt-3.5-turbo-16k"
 ai_timeout=90 # seconds
 fallback_models =[]
 verbosity_level=0 # 0,1,2
-private_dataset_cache_dir="~/.cache/huggingface/datasets/alpha_codium"
+private_dataset_cache_dir="datasets"
 max_requests_per_minute=60
 
 
@@ -59,5 +59,5 @@ trace_depth=4
 [code_contests_tester]
 stop_on_first_failure = false
 timeout = 3
-path_to_python_bin = "/usr/bin/python3.9"
-path_to_python_lib = ["/usr/lib", "/usr/lib/python3.9"]
+# path_to_python_bin = "/usr/bin/python3.9"
+# path_to_python_lib = ["/usr/lib", "/usr/lib/python3.9"]
